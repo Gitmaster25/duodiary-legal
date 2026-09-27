@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How DuoDiary stores your memories, uses device permissions, and handles account deletion. Privacy policy and support contact.">
+  <title>Privacy Policy — DuoDiary</title>
+  <style>
+    :root {
+      --bg: #FAF9F6;
+      --card-bg: #FFFFFF;
+      --text: #2D3748;
+      --heading: #1A202C;
+      --muted: #718096;
+      --border: #E2E8F0;
+      --primary: #245785;
+      --primary-hover: #1b4266;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+    header {
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .brand-icon {
+      font-size: 32px;
+      line-height: 1;
+    }
+    .brand-title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--heading);
+      letter-spacing: -0.5px;
+    }
+    .brand-subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    nav {
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 6px 12px;
+      border-radius: 6px;
+      background: rgba(36, 87, 133, 0.06);
+      transition: background 0.2s;
+    }
+    nav a:hover {
+      background: rgba(36, 87, 133, 0.12);
+    }
+    nav a.active {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+    h1 {
+      color: var(--heading);
+      line-height: 1.2;
+      font-size: 26px;
+      margin-top: 0;
+    }
+    h2 {
+      color: var(--heading);
+      margin-top: 32px;
+      font-size: 20px;
+    }
+    p, li {
+      font-size: 16px;
+    }
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+      text-underline-offset: 3px;
+    }
+    a:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 4px;
+    }
+    .contact-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 36px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+    .contact-box h2 {
+      margin-top: 0;
+    }
+    .contact-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #FFFFFF !important;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 25px;
+      margin-top: 12px;
+      box-shadow: 0 2px 6px rgba(36, 87, 133, 0.2);
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--muted);
+      margin: 0 8px;
+    }
+    footer a:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <span class="brand-icon">📖</span>
+      <div>
+        <div class="brand-title">DuoDiary</div>
+        <p class="brand-subtitle">Your memories, made together</p>
+      </div>
+    </div>
+    <nav>
+      <a href="./">&larr; Support &amp; Help</a>
+      <a href="privacy" class="active">Privacy Policy</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Terms of Use (EULA)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy — DuoDiary</h1>
+    <p><em>Last updated: September 26, 2026</em></p>
+    <p>DuoDiary helps you keep personal journals, memories, and scrapbook pages, and share books with a partner you invite.</p>
+
+    <h2>1. Data storage &amp; iCloud</h2>
+    <p>DuoDiary does not operate its own backend servers. Your profile, books, photos, scrapbook content, and app preferences are stored on your device. Content supported by iCloud sync is stored in your private Apple iCloud container using CloudKit. Shared books use Apple's CloudKit sharing with the partner you invite. The DuoDiary developer does not have access to your private iCloud memories.</p>
+    <p>If you block sharing with someone, DuoDiary stores their iCloud participant identifier and display label in your private CloudKit database. This lets your connected devices refuse invitations involving that identity and remove shared access. If you own a book, blocking removes their access; otherwise DuoDiary leaves the shared book. Blocking does not erase the other person's original content or copies they already saved. You can manage blocks in Sharing safety. Unblocking does not automatically restore earlier book access. These block records are included in account deletion.</p>
+    <p>Sign in with Apple supplies an account identifier and, when you choose to provide it, a name for your profile. DuoDiary uses account identifiers to associate your content and keep accounts separate on a device.</p>
+    <p>Apple processes data needed to provide iCloud, Sign in with Apple, maps, and purchases under its own <a href="https://www.apple.com/legal/privacy/">privacy policy</a>. Content you export or send outside DuoDiary is handled by the destination you choose.</p>
+    <p>Any service provider with whom DuoDiary shares personal data must provide the same or an equivalent level of protection as described in this policy and required by Apple's App Store Review Guidelines. We limit sharing to the data needed for the purposes described here and use providers only where their terms and safeguards meet these requirements.</p>
+
+    <h2>2. Device permissions &amp; optional features</h2>
+    <ul>
+      <li><strong>Photos &amp; camera:</strong> Used to capture or attach images to memories, scrapbook pages, and covers, and to save exports you request.</li>
+      <li><strong>Location:</strong> Used on demand in the foreground for features such as country challenges and map positioning. DuoDiary does not track your location in the background. When importing a photo with location metadata, you can choose whether to attach an exact location, a place, or no location to the memory. Selected location information can be stored and shared with that memory. Apple's location services may be used to resolve coordinates to a place.</li>
+      <li><strong>Notifications:</strong> Optional reminders use your notification preferences. You can disable them in DuoDiary or iOS Settings.</li>
+      <li><strong>Widgets:</strong> If you enable widget photos, selected photos and dates may appear on your Home Screen. You can turn this off in DuoDiary's profile settings.</li>
+    </ul>
+    <p>You can change device permissions in iOS Settings. Disabling a permission does not automatically delete content you previously saved.</p>
+
+    <h2>3. In-app purchases &amp; subscriptions</h2>
+    <p>DuoDiary Plus subscriptions, Lifetime access, and Gems are processed by Apple through StoreKit. DuoDiary stores purchase and entitlement information needed to provide your access and gem balance, but does not collect your billing or credit card details.</p>
+    <p>Purchases are subject to <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's Standard End User License Agreement</a>. Manage or cancel subscriptions in your <a href="https://apps.apple.com/account/subscriptions">App Store subscription settings</a>.</p>
+
+    <h2>4. Tracking &amp; advertising</h2>
+    <p>DuoDiary does not include third-party advertising SDKs or track you across other companies' apps or websites. It does not sell your personal data.</p>
+    <p>This policy page is hosted on GitHub Pages. GitHub may process technical request information when you visit this website, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. This page does not embed analytics, advertising, or third-party fonts.</p>
+
+    <h2>5. Retention &amp; account deletion</h2>
+    <p>Your saved content remains on your device and, where synced, in iCloud until you remove it. To delete your DuoDiary account data, open <strong>Profile &rsaquo; Account &rsaquo; Delete account</strong>, then follow the <strong>Delete account &amp; data</strong> confirmation flow. Deletion requires an iCloud connection and Apple identity verification.</p>
+    <p>This removes your private DuoDiary CloudKit records and this device's account data. DuoDiary removes your original items and edits to those items, including copies made inside the app, while preserving items your partner added separately. For accessible partner-owned books, cleanup happens before leaving the share. Deletion pauses if the existing shared storage cannot preserve your partner’s items. If access is missing or authorship is unclear, deletion stops and explains that it is unfinished; you can retry after resolving the issue. Minimal account-generation, book and content removal markers are retained to prevent older devices from restoring deleted content. These markers contain identifiers and cleanup status, not your photos or journal text. A private inventory of shared books remains until cleanup is verified, even if you leave a share. An interrupted device cleanup can resume after reopening the app. Copies previously exported or saved by someone else are not deleted.</p>
+    <p>Deleting DuoDiary data does not delete your Apple Account or iCloud account, erase Apple's purchase history, or cancel subscriptions. You can cancel a subscription through Apple and separately stop using Sign in with Apple in your Apple Account settings.</p>
+
+    <section class="contact-box" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">6. Contact &amp; support</h2>
+      <p>For privacy questions or technical support, contact <a href="mailto:duodiaryadmin@gmail.com">duodiaryadmin@gmail.com</a>. Please describe your issue and app version, and avoid sending private memories or photos unless needed for your request.</p>
+      <div>
+        <a class="contact-btn" href="mailto:duodiaryadmin@gmail.com?subject=DuoDiary%20Support">Contact Support</a>
+      </div>
+      <p style="margin-top: 16px;">The “Sharing safety &amp; report” action in shared-book options lets you choose a concern and open an email draft for you to review and send. It does not automatically send a report or attach your photos, book details, or journal text.</p>
+      <p>If you email us, we receive your email address, message, and any attachments you choose to send. We use them to respond to your request and retain them only as long as needed to handle it or meet legal obligations. You can request deletion by contacting the same address. Support email is hosted by Google's Gmail service and is processed under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 DuoDiary. All rights reserved.</p>
+    <p>
+      <a href="./">Support</a> &bull;
+      <a href="privacy">Privacy Policy</a> &bull;
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Terms of Use (EULA)</a>
+    </p>
+  </footer>
+
+</body>
+</html>
