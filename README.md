@@ -6,34 +6,34 @@ Hosted via GitHub Pages at: `https://gitmaster25.github.io/duodiary-legal/`
 
 ---
 
-## 📱 App Store Connect URLs
+## 📱 App Store Connect Configuration
 
-| Field in App Store Connect | Configured Value | Description |
+| Field in App Store Connect | Configured Value | Apple Review Requirement |
 | :--- | :--- | :--- |
-| **Support URL** (Obligatoire) | `https://gitmaster25.github.io/duodiary-legal/` | Support portal with contact button, email, and FAQ |
-| **Marketing URL** (Facultatif) | *(Laisser vide)* | Non requis |
-| **Privacy Policy URL** (Section Confidentialité) | `https://gitmaster25.github.io/duodiary-legal/privacy` | Full Privacy Policy |
-| **Terms of Use (EULA)** | `https://www.apple.com/legal/internet-services/itunes/dev/stdeula/` | Standard Apple EULA |
+| **Support URL** (Required) | `https://gitmaster25.github.io/duodiary-legal/` | Guideline 1.5: Direct contact info, email link, and FAQs |
+| **Marketing URL** (Optional) | *(Leave empty)* | Not required |
+| **Privacy Policy URL** (App Privacy Section) | `https://gitmaster25.github.io/duodiary-legal/privacy` | Guideline 5.1.1: Complete data collection, retention, deletion disclosure |
+| **Terms of Use (EULA)** | `https://www.apple.com/legal/internet-services/itunes/dev/stdeula/` | Guideline 3.1.2: Standard Apple EULA for subscriptions |
 
 ---
 
 ## 📬 Contact & Support
 
 - **Email**: [duodiaryadmin@gmail.com](mailto:duodiaryadmin@gmail.com)
-- **Direct Mailto**: [Nous contacter](mailto:duodiaryadmin@gmail.com?subject=DuoDiary%20Support)
+- **Direct Mail Link**: [Contact Support](mailto:duodiaryadmin@gmail.com?subject=DuoDiary%20Support)
 
 ---
 
-## 🗂 Structure du dépôt
+## 🗂 Repository Structure
 
 ```text
-├── .nojekyll           # Empêche Jekyll de filtrer les dossiers
-├── index.html          # Page d'accueil & Portail de Support
-├── support.html        # Alias de support (/support)
+├── .nojekyll           # Prevents Jekyll from ignoring static files and folders
+├── index.html          # Main Support & Help Center (Root URL: /)
+├── support.html        # Clean URL support alias (/support)
 ├── support/
-│   └── index.html      # Alias avec slash (/support/)
-├── privacy.html        # Politique de Confidentialité (/privacy)
+│   └── index.html      # Trailing slash support alias (/support/)
+├── privacy.html        # Official Privacy Policy (/privacy)
 ├── privacy/
-│   └── index.html      # Alias avec slash (/privacy/)
-└── README.md           # Documentation du dépôt
+│   └── index.html      # Trailing slash privacy alias (/privacy/)
+└── README.md           # Documentation & App Store Connect reference
 ```
