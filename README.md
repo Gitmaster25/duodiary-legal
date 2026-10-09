@@ -4,7 +4,7 @@ Support portal, terms of use, and privacy policy sources for **DuoDiary** (`app.
 
 Hosted via GitHub Pages at: `https://gitmaster25.github.io/duodiary-legal/`
 
-Local copy updated October 2, 2026. Editing this directory does not publish the legal website or apply App Store Connect metadata. Verify the published pages and CloudKit Production permissions separately before release.
+Privacy policy updated October 9, 2026 with the owner-supplied controller name, current diagnostic and account-cleanup disclosures, retention rules, privacy rights, and provider information. The owner committed to handling reports and deleting closed reports/support correspondence within 90 days, subject to the policy exceptions. GitHub Pages publication and live operational acceptance must be verified separately; repository edits do not apply App Store Connect metadata.
 
 ---
 
@@ -23,7 +23,7 @@ Local copy updated October 2, 2026. Editing this directory does not publish the 
 
 DuoDiary prohibits objectionable content and abusive behavior. Its implemented safety controls are in-app CloudKit reports, participant blocking, removal from owned books, and leaving partner-owned shares. The developer cannot directly inspect or erase another person's private iCloud memories, and no developer-wide permanent account-ban service has been established. Apple requires timely responses; a fixed 24-hour response guarantee is not documented.
 
-Reports go to `DDAbuseReport` in the public CloudKit database for developer review in CloudKit Console. They contain book/reporter identifiers, category, optional details and offender identifier, status, and timestamps, with no automatic photo/page/journal attachments. Runtime app clients create reports without report-read rights. Reports and support messages are retained only as needed for handling, abuse prevention, or legal obligations; users can request deletion through the support address.
+Reports go to `DDAbuseReport` in the public CloudKit database for developer review in CloudKit Console. They contain book/reporter identifiers, category, optional details and offender identifier, status, and timestamps, with no automatic photo/page/journal attachments. Authenticated app clients can create reports without general access to other people's reports. CloudKit permits creators to read and change their own records; DuoDiary has no report browsing or download feature. Closed reports and support correspondence are deleted within 90 days of closure unless a continuing investigation, legal claim, or legal obligation requires keeping the minimum necessary information longer. Open reports are reviewed regularly; users can request deletion through the support address.
 
 Minimal `DDContributorRemovalMarkerV3` records are separate from reports. Each uses a 256-bit unguessable per-contributor/book lookup identifier and contains only a removal flag in app fields. CloudKit adds creator and timestamp metadata. Authenticated clients holding the lookup key can fetch a marker directly; DuoDiary shares the key through private/shared topology with invited participants. The app has no browsing/list feature. Markers may remain after account deletion to prevent resurrection. Account-generation, contribution-directory, and other private cleanup records remain in the user's private CloudKit database as described in the policy.
 
